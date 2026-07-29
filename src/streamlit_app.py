@@ -1,8 +1,3 @@
-
-# src/streamlit_app.py
-# App de predicción de dirección BTC/USDT - Proyecto final 4Geeks
-# Fase 2: predicción en vivo con datos de Binance
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -177,7 +172,7 @@ modelo = cargar_modelo()
 scaler = cargar_scaler()
 features = cargar_features()
 
-# --------- Lógica de predicción ----------
+#--------- Lógica de predicción ----------
 if boton_predecir:
     with st.spinner("Obteniendo datos de Binance..."):
         #pedimos 200 velas: necesitamos como mínimo 72 para SMA_72, pedimos de más por seguridad
